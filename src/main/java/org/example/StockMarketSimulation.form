@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.StockMarketSimulation">
+  <grid id="27dc6" binding="panel1" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="663" height="447"/>
+    </constraints>
+    <properties>
+      <background color="-59087"/>
+      <foreground color="-1"/>
+      <preferredSize width="700" height="400"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="62d58" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <preferredSize width="160" height="400"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="c7600" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="South"/>
+            <properties>
+              <preferredSize width="0" height="100"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="b6323" class="javax.swing.JLabel">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <requestFocusEnabled value="false"/>
+                  <text value="Refresh stock data"/>
+                </properties>
+              </component>
+              <component id="3717b" class="javax.swing.JButton" binding="buttonRefresh">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <text value="Refresh"/>
+                </properties>
+              </component>
+              <grid id="c69fc" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <preferredSize width="0" height="40"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="19fd6" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <text value="Last data refresh:"/>
+                    </properties>
+                  </component>
+                  <component id="25eab" class="javax.swing.JTextArea" binding="textDateTimeRefresh">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <background color="-1184018"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <component id="d534f" class="javax.swing.JLabel" binding="title">
+            <constraints border-constraint="North"/>
+            <properties>
+              <alignmentX value="0.0"/>
+              <alignmentY value="0.0"/>
+              <autoscrolls value="false"/>
+              <background color="-3951153"/>
+              <font size="12"/>
+              <preferredSize width="160" height="40"/>
+              <text value="Stock Market Simulation"/>
+            </properties>
+          </component>
+          <grid id="aa877" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="1daca" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <preferredSize width="0" height="80"/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="755ce" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="6959b" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <preferredSize width="0" height="80"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="4e04" class="javax.swing.JLabel">
+                        <constraints border-constraint="North"/>
+                        <properties>
+                          <text value="Money invested info:"/>
+                        </properties>
+                      </component>
+                      <component id="aa79e" class="javax.swing.JTextArea" binding="textGainInfo">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <autoscrolls value="true"/>
+                          <background color="-1184018"/>
+                          <caretColor color="-3092015"/>
+                          <editable value="false"/>
+                          <foreground color="-16777216"/>
+                          <margin top="0" left="0" bottom="0" right="0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="f3805" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <preferredSize width="0" height="80"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="58f0b" class="javax.swing.JLabel">
+                        <constraints border-constraint="North"/>
+                        <properties>
+                          <text value="Investments gains:"/>
+                        </properties>
+                      </component>
+                      <component id="2a209" class="javax.swing.JTextArea" binding="textGain">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <background color="-1184018"/>
+                          <editable value="false"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="239b2" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <preferredSize width="0" height="80"/>
+                    </properties>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="9e289" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="5aa23" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties>
+              <preferredSize width="0" height="60"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="9efda" class="javax.swing.JLabel">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <text value="Check stock by symbol input:                              Invested stocks: "/>
+                </properties>
+              </component>
+              <component id="57341" class="javax.swing.JButton" binding="buttonCheckStock">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <preferredSize width="180" height="30"/>
+                  <text value="Check stock"/>
+                </properties>
+              </component>
+              <grid id="94513" binding="panelStocks" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <foreground color="-16777216"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="5a048" class="javax.swing.JTextField" binding="inputSymbol">
+                    <constraints border-constraint="West"/>
+                    <properties>
+                      <caretColor color="-7961468"/>
+                      <font size="20"/>
+                      <preferredSize width="80" height="30"/>
+                      <selectedTextColor color="-6381662"/>
+                      <toolTipText value="Symbol"/>
+                    </properties>
+                  </component>
+                  <component id="2605c" class="javax.swing.JTextPane" binding="textStocks">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <autoscrolls value="true"/>
+                      <background color="-1184018"/>
+                      <editable value="false"/>
+                      <preferredSize width="7" height="80"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="15dc3" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="1e3b5" class="javax.swing.JLabel">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <text value="Stock info:                                            Invest money:"/>
+                </properties>
+              </component>
+              <grid id="c4c94" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <preferredSize width="200" height="0"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="eb547" class="javax.swing.JTextArea" binding="textStockValue">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <background color="-1184018"/>
+                      <editable value="false"/>
+                      <preferredSize width="1" height="80"/>
+                    </properties>
+                  </component>
+                  <grid id="7b5aa" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="ea022" class="javax.swing.JTextArea" binding="textGainStock">
+                        <constraints border-constraint="North"/>
+                        <properties>
+                          <alignmentX value="0.5"/>
+                          <background color="-1184018"/>
+                          <editable value="false"/>
+                          <preferredSize width="1" height="40"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="e6dff" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="1ee9a" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <preferredSize width="0" height="120"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="ec574" class="javax.swing.JLabel">
+                        <constraints border-constraint="North"/>
+                        <properties>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                      <grid id="15f2" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <preferredSize width="49" height="53"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="3c304" class="javax.swing.JTextPane" binding="textSharesInfo">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <background color="-1184018"/>
+                              <editable value="false"/>
+                            </properties>
+                          </component>
+                          <grid id="9fbfa" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints border-constraint="North"/>
+                            <properties>
+                              <preferredSize width="0" height="20"/>
+                            </properties>
+                            <border type="none"/>
+                            <children>
+                              <component id="7913b" class="javax.swing.JTextField" binding="textMoneyAmount">
+                                <constraints border-constraint="West"/>
+                                <properties>
+                                  <preferredSize width="80" height="30"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </grid>
+                        </children>
+                      </grid>
+                      <grid id="1db86" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints border-constraint="East"/>
+                        <properties>
+                          <preferredSize width="100" height="0"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="e2cd8" class="javax.swing.JButton" binding="buttonBuy">
+                            <constraints border-constraint="North"/>
+                            <properties>
+                              <preferredSize width="78" height="50"/>
+                              <text value="Buy"/>
+                            </properties>
+                          </component>
+                          <component id="f4eb5" class="javax.swing.JButton" binding="buttonSell">
+                            <constraints border-constraint="South"/>
+                            <properties>
+                              <preferredSize width="78" height="50"/>
+                              <text value="Sell"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="64b64" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <preferredSize width="0" height="80"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="96920" class="javax.swing.JTextPane" binding="textTransaction">
+                        <constraints border-constraint="North"/>
+                        <properties>
+                          <background color="-1184018"/>
+                          <editable value="false"/>
+                          <font style="2"/>
+                          <preferredSize width="7" height="30"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="e6a55" binding="panelHistory" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <preferredSize width="0" height="200"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="d3333" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <text value="Transaction history"/>
+                    </properties>
+                  </component>
+                  <component id="7186e" class="javax.swing.JTextPane" binding="textHistory">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <autoscrolls value="true"/>
+                      <background color="-1184018"/>
+                      <editable value="false"/>
+                      <minimumSize width="100" height="100"/>
+                      <preferredSize width="400" height="400"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
